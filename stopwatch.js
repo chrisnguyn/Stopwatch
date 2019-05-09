@@ -28,12 +28,10 @@ function stopwatch()
         {
             minutes = 0;
             hours++;
-            // will increment next column and reset its own
         }
     }
 
-    // if seconds, minutes, or hours only have one digit, add a leading 0
-    // otherwise, it would collapse to 0:0:0.
+    // if seconds, minutes, or hours only have one digit, add a leading 0. otherwise, it would collapse to 0:0:0.
     if (seconds < 10)
     {
         displaySec = "0" + seconds.toString();
@@ -61,13 +59,10 @@ function stopwatch()
         displayHours = hours;
     }
 
-
-    // update time
-    document.getElementById("watchDisplay").innerHTML = displayHours + ":" + displayMin + ":" + displaySec;
-
+    document.getElementById("watchDisplay").innerHTML = displayHours + ":" + displayMin + ":" + displaySec; // update time
 }
 
-// will not start right away because tucked in a function. click button calls this
+// does not start right away because this is a function, will not start upon launch, button onclick calls this
 function toggle()
 {
     change();
