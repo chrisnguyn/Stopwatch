@@ -1,0 +1,13 @@
+.myStopwatch {
+  height: 300px;
+  width: 100%;
+  color: blue;
+}
+
+/* # targets a single element declared with attribute ID "watchDisplay" */
+
+#watchDisplay {
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+}
